@@ -1,24 +1,34 @@
 ---
 layout: default
-title: Chulapa on remote
+title: Viol Making Symposium
 header_type: hero
-subtitle: Starter pack
+subtitle: West Dean College, October 4th, 2024
 ---
 
-Click [**Use this template**](https://github.com/dieghernan/chulapa-101/generate) button above for cloning this repo and get started with [Chulapa Jekyll theme](https://github.com/dieghernan/chulapa).
+October 4th, 2024 at West Dean College, Sussex, UK
 
-Contains basic configuration to get you a site with:
+*9:30am to 5:30pm*
 
-- Sample posts and [paginated blog index](./blog/).
-- Sample collection with Markdown and kramdown cheatsheets and [collection index](./cheatsheets).
-- Archive pages for posts grouped by year, category, and tag.
-- Demo page with the different Bootstrap components and how they look with the actual skin settings.
-- Sample 404 page.
-- Site search with Lunr.
-- Sample `_config` with minimal configuration. `primary` color is set to <span class="text-primary">LightSkyBlue</span> and `autothemer` is enabled. [Learn how to customize your site](https://dieghernan.github.io/chulapa/docs/03-theming).
-- Sample `algolia-search.yml` for using Algolia+GitHub Actions.
-- Sample files for extending the theme with your own scripts and css.
+### **Bookings** 
 
-On addition, `jekyll-sitemap` generates your sitemap on [./sitemap.xml](./sitemap.xml), and Chulapa generates an Atom feed on [./atom.xml](./atom.xml) and a RSS 2.0 feed on [./rss.xml](./rss.xml).
+For bookings please see the <a href="https://freo.me/violmaking">Bookings Page</a>.
 
-[Configure as necessary](https://dieghernan.github.io/chulapa/docs/02-config) and replace sample content with your own.
+Please note that in-person attendees will have lunch, tea and coffee included in their booking fee. 
+
+If you would like to stay at the college overnight, please
+see the [West Dean site](https://www.westdean.ac.uk/bed-and-breakfast).
+
+### **Agenda**
+
+The agenda will be posted as soon as it is finalised. 
+
+The organisers are working to have talks on aspects of making and restoring viols, together with performers of those instruments.
+
+### **Location**
+
+[Find West Dean on Google Maps](https://www.google.co.uk/maps/place/West+Dean+College/@50.9064568,-0.7746854,16z/data=!4m2!3m1!1s0x48744c92a7414307:0x4339e59f706d79af)
+
+West Dean\
+Nr Chichester\
+West Sussex\
+PO18 0QZ
