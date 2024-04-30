@@ -1,4 +1,4 @@
-remote_theme: dieghernan/chulapa
+remote_theme: pzfreo/chulapa
 
 # Find errors on this file with http://www.yamllint.com/
 
@@ -8,11 +8,11 @@ remote_theme: dieghernan/chulapa
 # Overall options for your site, would affect your site SEO
 # Default values are explained
 locale                  :     #default["en-US"] format language-TERRITORY , e.g fr, en-GB, es-MX, pt-BR
-title                   : Chulapa 101    #default["repository_name"]
+title                   : Viol Making Symposium    #default["repository_name"]
 title_separator         :     #default [" | "]
-subtitle                : Chulapa Jekyll Theme starter pack    #default [your-repository-tagline]  
-description             : Chulapa Jekyll Theme starter pack #default [your-repository-tagline]
-url                     :     #See baseurl - On Github Pages you may leave it blank - If you use CNAME use your domain
+subtitle                : West Dean College    #default [your-repository-tagline]  
+description             : A one-day symposium about making Viola da Gambas #default [your-repository-tagline]
+url                     : https://violmaking.org    #See baseurl - On Github Pages you may leave it blank - If you use CNAME use your domain
 baseurl                 :     #On Github Pages you may leave it blank. Have a look to: https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
 words_per_minute        :     #default[200]
 timezone                :     #"Europe/Madrid ,see https://jekyllrb.com/docs/configuration/options/ and https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -21,9 +21,9 @@ timezone                :     #"Europe/Madrid ,see https://jekyllrb.com/docs/con
 og_image                :     #default[author.avatar (see below)] or [github-avatar]
 twitter_site            :     #Avoid @
 author:
-  name                  :  Your Name   # Name Surname Company
+  name                  :  Paul Fremantle   # Name Surname Company
   avatar                :     # Try a square file. Info: Your github avatar on https://github.com/[USERNAME].png
-  location              :  "Madrid, Spain"   # New York, USA 
+  location              :  "Chichester, UK"   # New York, USA 
 #  links:                
 #    - url:  #A link or email: https://twitter.com/jack, mail@example.com
 #      icon: # A Fontawesome 5 code: fab fa-twitter - see https://fontawesome.com/
@@ -96,37 +96,37 @@ navbar:
     title   :  Home # Title in navbar
     url     :  # default["url/baseurl"]
     img     :  # An small image, try 30x30px
-  nav:
-  - title   : Blog # Label
-    url     : /blog/ # url	
-  - title   : Cheatsheets
-    url     : /cheatsheets
-  - title   : Extras
-    child   :
-      - title : Tags
-        url   : /tags
-      - title : Categories
-        url   : /categories
-      - title : Archive
-        url   : /archive
-      - title : Current skin
-        url   : /current-skin
-  - title   : Docs
-    url     : https://dieghernan.github.io/chulapa/docs/01-install
-  - title   : Use this template
-    url     : https://github.com/dieghernan/chulapa-101/generate
-#  - title   : # Label submenu
-#    child:		
-#    - title: # Child label		
-#      url  : # child url	
-#    - title: # Child label		
-#      url  : # child url	
+#   nav:
+#   - title   : Blog # Label
+#     url     : /blog/ # url	
+#   - title   : Cheatsheets
+#     url     : /cheatsheets
+#   - title   : Extras
+#     child   :
+#       - title : Tags
+#         url   : /tags
+#       - title : Categories
+#         url   : /categories
+#       - title : Archive
+#         url   : /archive
+#       - title : Current skin
+#         url   : /current-skin
+#   - title   : Docs
+#     url     : https://dieghernan.github.io/chulapa/docs/01-install
+#   - title   : Use this template
+#     url     : https://github.com/dieghernan/chulapa-101/generate
+# #  - title   : # Label submenu
+# #    child:		
+# #    - title: # Child label		
+# #      url  : # child url	
+# #    - title: # Child label		
+# #      url  : # child url	
 #Social links to be placed on your site footer
 footer:
   links:
     - label : Repo on Github # Label
       icon  : fab fa-github # Fontawesome 5 icon
-      url   : https://github.com/dieghernan/chulapa-101 # A link or email: https://twitter.com/jack, mail@example.com
+      url   : https://github.com/pzfreo/violmaking-graphic # A link or email: https://twitter.com/jack, mail@example.com
     - label: "RSS"
       icon: "fa fa-rss"
       url:  "./atom.xml"
