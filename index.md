@@ -1,7 +1,9 @@
 ---
-layout: default
+layout: landingpage
 title: Viol Making Symposium
-header_type: hero
+header_type: splash
+header_img: "./assets/images/scroll.jpg"
+og_image: "./assets/images/scroll.jpg"
 subtitle: West Dean College, October 4th, 2024
 ---
 
