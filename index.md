@@ -4,7 +4,7 @@ title: Viol Making Symposium
 header_type: splash
 header_img: "./assets/images/scroll.jpg"
 og_image: "./assets/images/scroll.jpg"
-subtitle: West Dean College, October 4th, 2024
+subtitle: West Dean College, Friday October 4th, 2024
 ---
 
 Friday, October 4th, 2024 at West Dean College, Sussex, UK
