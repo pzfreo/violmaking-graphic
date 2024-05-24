@@ -7,7 +7,7 @@ og_image: "./assets/images/scroll.jpg"
 subtitle: West Dean College, October 4th, 2024
 ---
 
-October 4th, 2024 at West Dean College, Sussex, UK
+Friday, October 4th, 2024 at West Dean College, Sussex, UK
 
 *9:30am to 5:30pm*
 
