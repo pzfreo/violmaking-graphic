@@ -22,9 +22,18 @@ see the [West Dean site](https://www.westdean.ac.uk/bed-and-breakfast).
 
 ### **Agenda**
 
-The agenda will be posted as soon as it is finalised. 
+|------|-------| 
+| 09:30 - 09:45| Welcome and introduction |
+| 09:45 - 11:00 | Shem Mackey and Luke Challinor - Baryton |
+| 10:45 - 11:15 | Coffee Break |
+| 11:15 - 12:30 | Jane Julier and Henrik Persson - Smith Bass |
+| 12:30 - 13:30 | Lunch  |
+| 13:45 - 15:00 | Tilman Muthesius - Stainer |
+| 15:00 - 15:30 | Tea Break |
+| 15:30 - 16:45 | Nellie Poidevan - Wood for Viol Bows |
+| 16:45 - 17:30 | Round Table |
+| 17:30 - 18:00 | Workshop tour |
 
-The organisers are working to have talks on aspects of making and restoring viols, together with performers of those instruments.
 
 ### **Location**
 
