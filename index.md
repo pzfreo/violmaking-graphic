@@ -9,7 +9,7 @@ subtitle: West Dean College, Friday October 4th, 2024
 
 Friday, October 4th, 2024 at West Dean College, Sussex, UK
 
-*9:30am to 5:30pm*
+*09:30 to 18:00pm*
 
 ### **Bookings** 
 
@@ -21,6 +21,8 @@ If you would like to stay at the college overnight, please
 see the [West Dean site](https://www.westdean.ac.uk/bed-and-breakfast).
 
 ### **Agenda**
+
+This is a provisional agenda and subject to change!
 
 |------|-------| 
 | 09:30 - 09:45| Welcome and introduction |
