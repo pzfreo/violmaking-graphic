@@ -127,6 +127,10 @@ footer:
     - label : Repo on Github # Label
       icon  : fab fa-github # Fontawesome 5 icon
       url   : https://github.com/pzfreo/violmaking-graphic # A link or email: https://twitter.com/jack, mail@example.com
+      links:
+  - label : Email # Label
+      icon  : fab fa-envelope # Fontawesome 5 icon
+      url   : mailto:info@violmaking.org # A link or email: https://twitter.com/jack, mail@example.com
     - label: "RSS"
       icon: "fa fa-rss"
       url:  "./atom.xml"

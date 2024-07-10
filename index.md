@@ -15,10 +15,16 @@ Friday, October 4th, 2024 at West Dean College, Sussex, UK
 
 For bookings please see the <a href="https://freo.me/violmaking">Bookings Page</a>.
 
-Please note that in-person attendees will have lunch, tea and coffee included in their booking fee. 
+Please note that in-person attendees will have lunch, tea and coffee included in their booking fee, which is £25. 
+The symposium is free for students (but book a place, please!).
 
 If you would like to stay at the college overnight, please
 see the [West Dean site](https://www.westdean.ac.uk/bed-and-breakfast).
+
+### **Makers** 
+
+There will be a table for makers to display instruments. If you are attending and would like to bring along one instrument that you have made, please email info@violmaking.org to register your interest and reserve a space.
+
 
 ### **Agenda**
 
@@ -26,15 +32,17 @@ This is a provisional agenda and subject to change!
 
 |------|-------| 
 | 09:30 - 09:45| Welcome and introduction |
-| 09:45 - 11:00 | Shem Mackey and Luke Challinor - Baryton |
+| 09:45 - 11:00 | Shem Mackey and Luke Challinor - Joachim Tielke. Four Barytons and aspects of construction |
 | 10:45 - 11:15 | Coffee Break |
-| 11:15 - 12:30 | Jane Julier and Henrik Persson - Smith Bass |
+| 11:15 - 12:30 | Jane Julier and Henrik Persson - The Resurrection of the 1703 Edward Lewis Viol |
 | 12:30 - 13:30 | Lunch  |
-| 13:45 - 15:00 | Tilman Muthesius - Stainer |
+| 13:45 - 15:00 | Tilman Muthesius - Stainer Viols |
 | 15:00 - 15:30 | Tea Break |
-| 15:30 - 16:45 | Nellie Poidevan - Wood for Viol Bows |
+| 15:30 - 16:45 | Nellie Poidevan - Experimenting with diverse European and tropical wood species for historical bow making |
 | 16:45 - 17:30 | Round Table |
 | 17:30 - 18:00 | Workshop tour |
+| 18:00 - 19:30 | Dinner (pay as you go) |
+| 19:30 - 21:00 | Informal concert |
 
 
 ### **Location**
