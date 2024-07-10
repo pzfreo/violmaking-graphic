@@ -279,6 +279,7 @@ GEM
     unicode-display_width (1.8.0)
     uri (0.13.0)
     verbal_expressions (0.1.5)
+    webrick (1.8.1)
 
 PLATFORMS
   x86_64-darwin-23
@@ -289,6 +290,7 @@ DEPENDENCIES
   jekyll-github-metadata
   jekyll-include-cache
   jekyll-sitemap
+  webrick (~> 1.8)
 
 BUNDLED WITH
    2.3.26
