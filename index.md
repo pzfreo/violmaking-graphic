@@ -38,7 +38,7 @@ This is a provisional agenda and subject to change!
 | 12:30 - 13:30 | Lunch  |
 | 13:45 - 15:00 | **Tilman Muthesius** <br> *Stainer Viols* |
 | 15:00 - 15:30 | Tea Break |
-| 15:30 - 16:45 | **Nellie Poidevan** <br> *Experimenting with diverse European and tropical wood species for historical bow making* |
+| 15:30 - 16:45 | **Nelly Poidevin** <br> *Experimenting with diverse European and tropical wood species for historical bow making* |
 | 16:45 - 17:30 | Round Table |
 | 17:30 - 18:00 | Workshop tour |
 | 18:00 - 19:30 | Dinner (pay as you go) |
