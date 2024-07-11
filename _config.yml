@@ -129,11 +129,11 @@ footer:
       url   : https://github.com/pzfreo/violmaking-graphic # A link or email: https://twitter.com/jack, mail@example.com
       links:
     - label : Email # Label
-      icon  : fab fa-envelope # Fontawesome 5 icon
-      url   : mailto:info@violmaking.org # A link or email: https://twitter.com/jack, mail@example.com
-    - label: "RSS"
-      icon: "fa fa-rss"
-      url:  "./atom.xml"
+      icon  : fa-regular fa-envelope # Fontawesome 5 icon
+      url   : info@violmaking.org # A link or email: https://twitter.com/jack, mail@example.com
+    - label : Instagram # Label
+      icon  : fab fa-instagram # Fontawesome 5 icon
+      url   : https://www.instagram.com/viol.making/ # A link or email: https://twitter.com/jack, mail@example.com
   copyright: # default is © <year> <name> 
   
 # C. Theme Settings
