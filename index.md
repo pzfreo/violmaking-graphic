@@ -36,7 +36,7 @@ This is a provisional agenda and subject to change!
 | 10:45 - 11:15 | Coffee Break |
 | 11:15 - 12:30 | **Jane Julier and Henrik Persson** <br> *The Resurrection of the 1703 Edward Lewis Viol* |
 | 12:30 - 13:30 | Lunch  |
-| 13:45 - 15:00 | **Tilman Muthesius** <br> *Stainer Viols* |
+| 13:45 - 15:00 | **Tilman Muthesius** <br> *The Viols of Jacobus Stainer* |
 | 15:00 - 15:30 | Tea Break |
 | 15:30 - 16:45 | **Nelly Poidevin** <br> *Experimenting with diverse European and tropical wood species for historical bow making* |
 | 16:45 - 17:30 | Round Table |
