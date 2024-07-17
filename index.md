@@ -7,9 +7,9 @@ og_image: "./assets/images/scroll.jpg"
 subtitle: West Dean College, Friday October 4th, 2024
 ---
 
-Friday, October 4th, 2024 at West Dean College, Sussex, UK
+Friday, October 4th, 2024 at West Dean College, Sussex, UK *and streamed online*
 
-*09:30 to 18:00pm*
+*09:30 to 18:00pm BST*
 
 ### **Bookings** 
 
@@ -17,6 +17,10 @@ For bookings please see the <a href="https://freo.me/violmaking">Bookings Page</
 
 Please note that in-person attendees will have lunch, tea and coffee included in their booking fee, which is £25. 
 The symposium is free for students (but book a place, please!).
+
+You can book dinner in college if you wish to stay for the concert.
+
+If you cannot attend in person, streaming tickets are available and only £5.
 
 If you would like to stay at the college overnight, please
 see the [West Dean site](https://www.westdean.ac.uk/bed-and-breakfast).
