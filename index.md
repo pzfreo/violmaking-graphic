@@ -19,9 +19,10 @@ For bookings please see the <a href="https://freo.me/violmaking">Bookings Page</
 Please note that in-person attendees will have lunch, tea and coffee included in their booking fee, which is £25. 
 The symposium is free for students (but book a place, please!).
 
+There will be an informal concert in the evening, featuring Henrik Persson and Luke Challinor. The concert is included in the "in-person" ticket but will not be streamed.
 You can book dinner in college if you wish to stay for the concert.
 
-If you cannot attend in person, streaming tickets are available and only £5.
+If you cannot attend in person, streaming tickets for the daytime talks are available and only £5.
 
 If you would like to stay at the college overnight, please
 see the [West Dean site](https://www.westdean.ac.uk/bed-and-breakfast).
