@@ -6,7 +6,6 @@ header_img: "./assets/images/slice-of-a-viol.jpg"
 og_image: "./assets/images/scroll.jpg"
 subtitle: West Dean College, Friday October 4th, 2024
 ---
-
 Friday, October 4th, 2024 at West Dean College, Sussex, UK *and streamed online*
 
 
