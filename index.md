@@ -12,20 +12,11 @@ Friday, October 4th, 2024 at West Dean College, Sussex, UK *and streamed online*
 
 *09:30 to 18:00pm BST*
 
-### **Bookings** 
+### **Recordings** 
 
-For bookings please see the <a href="https://freo.me/violmaking">Bookings Page</a>.
+Please contact <a href="mailto:info@violmaking.org">info@violmaking.org</a> for the password.
 
-Please note that in-person attendees will have lunch, tea and coffee included in their booking fee, which is £25. 
-The symposium is free for students (but book a place, please!).
-
-There will be an informal concert in the evening, featuring Henrik Persson and Luke Challinor. The concert is included in the "in-person" ticket but will not be streamed.
-You can book dinner in college if you wish to stay for the concert.
-
-If you cannot attend in person, streaming tickets for the daytime talks are available and only £5.
-
-If you would like to stay at the college overnight, please
-see the [West Dean site](https://www.westdean.ac.uk/bed-and-breakfast).
+Recordings available [here](/recordings)
 
 ### **Makers** 
 
@@ -33,8 +24,6 @@ There will be a table for makers to display instruments. If you are attending an
 
 
 ### **Agenda**
-
-This is a provisional agenda and subject to change!
 
 |------|-------| 
 | 09:30 - 09:45| Welcome and introduction |
@@ -45,8 +34,7 @@ This is a provisional agenda and subject to change!
 | 13:45 - 15:00 | **Jane Julier and Henrik Persson** <br> *The Resurrection of the 1703 Edward Lewis Viol* |
 | 15:00 - 15:30 | Tea Break |
 | 15:30 - 16:45 | **Tilman Muthesius** <br> *The Viols of Jacobus Stainer* |
-| 16:45 - 17:30 | Round Table |
-| 17:30 - 18:00 | Workshop tour |
+| 16:45 - 18:00 | Workshop tour |
 | 18:00 - 19:30 | Dinner (please pre-book if you are staying for dinner) |
 | 19:30 - 21:00 | Informal concert in the Oak Hall |
 
