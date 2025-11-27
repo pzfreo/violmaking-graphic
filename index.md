@@ -4,7 +4,7 @@ title: Viol Making Symposium
 header_type: base
 header_img: "./assets/images/slice-of-a-viol.jpg"
 og_image: "./assets/images/scroll.jpg"
-subtitle: West Dean College, Friday March 26th, 2026
+subtitle: West Dean College, Friday March 27th, 2026
 ---
 Friday, March 27th, 2026 at West Dean College, Sussex, UK *and streamed online*
 
