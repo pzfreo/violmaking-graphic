@@ -4,45 +4,51 @@ title: Viol Making Symposium
 header_type: base
 header_img: "./assets/images/slice-of-a-viol.jpg"
 og_image: "./assets/images/scroll.jpg"
-subtitle: West Dean College, Friday October 4th, 2024
+subtitle: West Dean College, Friday March 26th, 2026
 ---
-Friday, October 4th, 2024 at West Dean College, Sussex, UK *and streamed online*
+Friday, March 27th, 2026 at West Dean College, Sussex, UK *and streamed online*
+
+*09:15 to 18:00pm GMT*
 
 
-*09:30 to 18:00pm BST*
+#### **Second Viol Making Symposium at West Dean**
 
-### **Recordings** 
+After a successful first meeting in October 2024, we are pleased to announce a second meeting in March 2026, once again kindly hosted by [West Dean College](https://www.westdean.ac.uk).
 
-Please contact <a href="mailto:info@violmaking.org">info@violmaking.org</a> for the password.
+The agenda and recordings for the previous run are [here](/2024).
 
-Recordings available [here](/recordings)
+[Tickets](https://buytickets.at/violmakingsymposium/1957294) are available now.
 
-### **Makers** 
+### **2026 Agenda**
 
-There will be a table for makers to display instruments. If you are attending and would like to bring along one instrument that you have made, please email <a href="mailto:info@violmaking.org">info@violmaking.org</a> to register your interest and reserve a space.
+We are just finalising the agenda. Please [subscribe to the mailing list](/subscribe) to get notifications of updates.
 
-
-### **Agenda**
+**Expect talks on Colichon construction, Busch and Hiltz viols and more.**
 
 |------|-------| 
-| 09:30 - 09:45| Welcome and introduction |
-| 09:45 - 11:00 | **Shem Mackey and Luke Challinor**  <br> *Joachim Tielke. Four Barytons and aspects of construction* |
-| 10:45 - 11:15 | Coffee Break |
-| 11:15 - 12:30 | **Nelly Poidevin** <br> *Experimenting with diverse European and tropical wood species for historical bow making* |
-| 12:30 - 13:30 | Lunch  |
-| 13:45 - 15:00 | **Jane Julier and Henrik Persson** <br> *The Resurrection of the 1703 Edward Lewis Viol* |
-| 15:00 - 15:30 | Tea Break |
-| 15:30 - 16:45 | **Tilman Muthesius** <br> *The Viols of Jacobus Stainer* |
+| 09:15 - 09:30| **Welcome and introduction**, Old Dairy |
+| 09:30 - 10:45 | **Speaker 1 / Performance**  <br> *Title 1* |
+| 10:45 - 11:00 | Coffee Break |
+| 11:00 - 11:45 | **Speaker 2**  <br> *Title 2* |
+| 11:45 - 12:30 | **Speaker 3**  <br> *Title 3* |
+| 12:30 - 14:00 | Lunch in the main College  |
+| 14:00 - 15:15 | **Speaker 4 and performance**  <br> *Title 4* |
+| 15:15 - 15:45 | Tea Break |
+| 15:45 - 16:45 | **Short Talks** <br> *Titles TBD* |
 | 16:45 - 18:00 | Workshop tour |
-| 18:00 - 19:30 | Dinner (please pre-book if you are staying for dinner) |
-| 19:30 - 21:00 | Informal concert in the Oak Hall |
+| 18:00 - 19:30 | Dinner in the main College (please pre-book if you are staying for dinner) |
+| 19:45 - 21:30 | **Informal concert in the Oak Hall** |
 
+#### **Makers** 
+
+There will be a table for makers to display instruments or bows. If you are attending and would like to bring along one instrument or a bow that you have made, please mention it when you book your ticket.
 
 ### **Location**
 
-[Find West Dean on Google Maps](https://www.google.co.uk/maps/place/West+Dean+College/@50.9064568,-0.7746854,16z/data=!4m2!3m1!1s0x48744c92a7414307:0x4339e59f706d79af)
+The day is centred around the Old Dairy at West Dean College. Please use the West Dean Gardens entrance.
+[Find West Dean Old Dairy on Google Maps](https://maps.app.goo.gl/avfu9qBYVxnU6QKt8)
 
-West Dean College\
+West Dean Gardens\
 Nr Chichester\
 West Sussex\
-PO18 0QZ
+PO18 0RX

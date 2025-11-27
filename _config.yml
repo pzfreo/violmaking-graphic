@@ -90,13 +90,20 @@ comments:
 #   "brand" options would be set on the left side of your navbar
 #   "nav" would be set on the right side. Two-level nav links available
 navbar:
-  style     :  #default is the classical top navbar, set "fab" for a floating action button navbar or "dual"
-  expand    :  # At which device size expand the navbar menu. default[md] https://getbootstrap.com/docs/4.5/layout/overview/
+  style     :  #default
+  expand    :  #default
   brand:
-    title   :  Home # Title in navbar
-    url     :  # default["url/baseurl"]
+    title   :  Viol Making Symposium  # I suggest using your site title here instead of "Home"
+    url     :  /
     img     :  # An small image, try 30x30px
-#   nav:
+  nav:
+    - title : Subscribe
+      url   : /subscribe
+    - title : Previous iterations
+      child :
+        - title : 2024
+          url   : /2024
+      
 #   - title   : Blog # Label
 #     url     : /blog/ # url	
 #   - title   : Cheatsheets
@@ -127,7 +134,6 @@ footer:
     - label : Repo on Github # Label
       icon  : fab fa-github # Fontawesome 5 icon
       url   : https://github.com/pzfreo/violmaking-graphic # A link or email: https://twitter.com/jack, mail@example.com
-      links:
     - label : Email # Label
       icon  : fa-regular fa-envelope # Fontawesome 5 icon
       url   : info@violmaking.org # A link or email: https://twitter.com/jack, mail@example.com

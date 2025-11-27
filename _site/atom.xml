@@ -3,7 +3,7 @@
 	<generator uri="https://dieghernan.github.io/chulapa" version="1.0.0">Chulapa</generator>
 	<link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" />
 	<link href="http://localhost:4000/" rel="alternate" type="text/html" />
-	<updated>2024-10-30T08:47:26+00:00</updated>
+	<updated>2025-11-27T10:24:35+00:00</updated>
 	<id>http://localhost:4000/atom.xml</id>
 	<title>Viol Making Symposium | West Dean College</title>
 	<subtitle>West Dean College</subtitle>
@@ -11,7 +11,7 @@
 		<name>Paul Fremantle</name>
 					
 	</author>
-	<rights>(c) 2024, Paul Fremantle</rights>
+	<rights>(c) 2025, Paul Fremantle</rights>
 	
 	<logo>https://github.com/pzfreo.png</logo><entry>
 		<title>Current skin</title>
