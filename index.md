@@ -21,9 +21,7 @@ The agenda and recordings for the previous run are [here](/2024).
 
 ### **2026 Agenda**
 
-We are just finalising the agenda. Please [subscribe to the mailing list](/subscribe) to get notifications of updates.
-
-**Expect talks on Colichon construction, Busch and Hiltz viols and more.**
+The agenda is still in progress and will change before the day. Please [subscribe to the mailing list](/subscribe) to get notifications of updates and we will update the website regularly.
 
 |------|-------| 
 | 09:15 - 09:30| **Welcome and introduction**, Old Dairy |
@@ -34,7 +32,7 @@ We are just finalising the agenda. Please [subscribe to the mailing list](/subsc
 | 12:30 - 14:00 | Lunch in the main College  |
 | 14:00 - 15:15 | **Johnnie Hill with Charlie Wild**  <br> *Viola Diablo - the devil at the crossroads of tradition* (including a performance) |
 | 15:15 - 15:45 | Tea Break |
-| 15:45 - 16:45 | **Short Talks** <br> *Titles TBD* |
+| 15:45 - 16:45 | **Short Talks** <br> *Titles TBD. Please contact us if you have a proposal* |
 | 16:45 - 18:00 | Workshop tour |
 | 18:00 - 19:30 | Dinner in the main College (please pre-book if you are staying for dinner) |
 | 19:45 - 21:30 | **Informal concert in the Oak Hall** |
