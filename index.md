@@ -29,10 +29,10 @@ We are just finalising the agenda. Please [subscribe to the mailing list](/subsc
 | 09:15 - 09:30| **Welcome and introduction**, Old Dairy |
 | 09:30 - 10:45 | **Andreas Linos**  <br> *The neck joint of Michel Collichon's 7-string viols: a new approach, hypothesis and results* (including a performance) |
 | 10:45 - 11:00 | Coffee Break |
-| 11:00 - 11:45 | **Nedim Dervic (Ercole & Dervic Luthiers) ** <br> *Ernst Busch and Paul Hiltz, Festooned Viols of Nuremberg* |
+| 11:00 - 11:45 | **Nedim Dervic (Ercole & Dervic Luthiers)** <br> *Ernst Busch and Paul Hiltz, Festooned Viols of Nuremberg* |
 | 11:45 - 12:30 | **Carlos Pineda**  <br> *Bassa alla francesa da sette corde. Hypothesis for the reconstruction of a bass viol by Stradivari* |
 | 12:30 - 14:00 | Lunch in the main College  |
-| 14:00 - 15:15 | **Johnnie Hill and Charlie Wild**  <br> *Viola Diablo - the devil at the crossroads of tradition* (including a performance) |
+| 14:00 - 15:15 | **Johnnie Hill with Charlie Wild**  <br> *Viola Diablo - the devil at the crossroads of tradition* (including a performance) |
 | 15:15 - 15:45 | Tea Break |
 | 15:45 - 16:45 | **Short Talks** <br> *Titles TBD* |
 | 16:45 - 18:00 | Workshop tour |
