@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 import AgendaTable from '../components/AgendaTable.astro';
 import InstagramFeed from '../components/InstagramFeed.astro';
+import VideoEmbed from '../components/VideoEmbed.astro';
 
 const agenda = [
   { time: '09:15 - 09:30', title: 'Welcome and introduction', description: 'Old Dairy' },
@@ -130,6 +131,28 @@ const agenda = [
             title="West Dean College location"
           ></iframe>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured 2024 Talk -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-semibold text-text mb-4 text-center">From the 2024 Symposium</h2>
+      <p class="text-text-light text-center mb-8">
+        Watch the talks from our first symposium
+      </p>
+      <div class="max-w-2xl mx-auto">
+        <VideoEmbed videoId="VJow46xOjlE" title="Tilman Muthesius - The Viols of Stainer" />
+        <p class="mt-3 text-sm text-text-light text-center">Tilman Muthesius - The Viols of Jacobus Stainer</p>
+      </div>
+      <div class="text-center mt-6">
+        <a
+          href="/2024"
+          class="inline-block text-primary hover:text-primary-light font-medium transition-colors"
+        >
+          See all 2024 recordings →
+        </a>
       </div>
     </div>
   </section>
