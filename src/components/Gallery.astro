@@ -1,0 +1,58 @@
+---
+interface GalleryImage {
+  src: string;
+  alt: string;
+  caption?: string;
+}
+
+interface Props {
+  images: GalleryImage[];
+  columns?: 2 | 3 | 4;
+}
+
+const { images, columns = 3 } = Astro.props;
+
+const gridCols = {
+  2: 'md:grid-cols-2',
+  3: 'md:grid-cols-2 lg:grid-cols-3',
+  4: 'md:grid-cols-2 lg:grid-cols-4'
+};
+---
+
+<div class:list={['grid grid-cols-1 gap-4', gridCols[columns]]}>
+  {images.map((image) => (
+    <a
+      href={image.src}
+      class="glightbox group block overflow-hidden rounded-lg bg-bg-alt"
+      data-gallery="gallery"
+      data-glightbox={image.caption ? `title: ${image.caption}` : undefined}
+    >
+      <div class="aspect-square overflow-hidden">
+        <img
+          src={image.src}
+          alt={image.alt}
+          loading="lazy"
+          class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+      </div>
+      {image.caption && (
+        <div class="p-3">
+          <p class="text-sm text-text-light">{image.caption}</p>
+        </div>
+      )}
+    </a>
+  ))}
+</div>
+
+<script>
+  import GLightbox from 'glightbox';
+  import 'glightbox/dist/css/glightbox.min.css';
+
+  document.addEventListener('DOMContentLoaded', () => {
+    GLightbox({
+      selector: '.glightbox',
+      touchNavigation: true,
+      loop: true,
+    });
+  });
+</script>

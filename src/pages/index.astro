@@ -1,0 +1,137 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import AgendaTable from '../components/AgendaTable.astro';
+import InstagramFeed from '../components/InstagramFeed.astro';
+
+const agenda = [
+  { time: '09:15 - 09:30', title: 'Welcome and introduction', description: 'Old Dairy' },
+  { time: '09:30 - 10:45', title: 'The neck joint of Michel Collichon\'s 7-string viols: a new approach, hypothesis and results', speaker: 'Andreas Linos', description: 'Including a performance' },
+  { time: '10:45 - 11:00', title: 'Coffee Break', isBreak: true },
+  { time: '11:00 - 11:45', title: 'Ernst Busch and Paul Hiltz, Festooned Viols of Nuremberg', speaker: 'Nedim Dervic (Ercole & Dervic Luthiers)' },
+  { time: '11:45 - 12:30', title: 'Bassa alla francesa da sette corde. Hypothesis for the reconstruction of a bass viol by Stradivari', speaker: 'Carlos Pineda' },
+  { time: '12:30 - 14:00', title: 'Lunch in the main College', isBreak: true },
+  { time: '14:00 - 15:15', title: 'Viola Diablo - the devil at the crossroads of tradition', speaker: 'Johnnie Hill with Charlie Wild', description: 'Including a performance' },
+  { time: '15:15 - 15:45', title: 'Tea Break', isBreak: true },
+  { time: '15:45 - 16:45', title: 'Short Talks', description: 'Titles TBD. Please contact us if you have a proposal' },
+  { time: '16:45 - 18:00', title: 'Workshop tour' },
+  { time: '18:00 - 19:30', title: 'Dinner in the main College', description: 'Please pre-book if you are staying for dinner', isBreak: true },
+  { time: '19:45 - 21:30', title: 'Informal concert in the Oak Hall' },
+];
+---
+
+<BaseLayout
+  title="Viol Making Symposium"
+  description="Second Viol Making Symposium at West Dean College, Friday March 27th, 2026"
+>
+  <Hero
+    title="Viol Making Symposium"
+    subtitle="West Dean College, Friday March 27th, 2026"
+    showCta={true}
+    ctaText="Get Tickets"
+    ctaHref="https://buytickets.at/violmakingsymposium/1957294"
+  />
+
+  <!-- Introduction -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <p class="text-lg text-text-light mb-4">
+          Friday, March 27th, 2026 at West Dean College, Sussex, UK <em>and streamed online</em>
+        </p>
+        <p class="text-text-light">09:15 to 18:00 GMT</p>
+      </div>
+
+      <div class="prose prose-lg mx-auto text-center">
+        <h2 class="text-2xl font-semibold text-text mb-4">Second Viol Making Symposium at West Dean</h2>
+        <p class="text-text-light">
+          After a successful first meeting in October 2024, we are pleased to announce a second meeting in March 2026,
+          once again kindly hosted by <a href="https://www.westdean.ac.uk" target="_blank" rel="noopener noreferrer">West Dean College</a>.
+        </p>
+        <p class="text-text-light mt-4">
+          The agenda and recordings for the previous run are <a href="/2024">here</a>.
+        </p>
+      </div>
+
+      <div class="text-center mt-8">
+        <a
+          href="https://buytickets.at/violmakingsymposium/1957294"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block bg-primary hover:bg-primary-dark text-text font-semibold px-8 py-3 rounded-lg transition-colors"
+        >
+          Get Tickets
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agenda -->
+  <section class="py-16 bg-bg-alt">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-semibold text-text mb-4 text-center">2026 Agenda</h2>
+      <p class="text-text-light text-center mb-8">
+        The agenda is still in progress and will change before the day.
+        Please <a href="/subscribe">subscribe to the mailing list</a> to get notifications of updates.
+      </p>
+      <AgendaTable items={agenda} />
+    </div>
+  </section>
+
+  <!-- Makers -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl font-semibold text-text mb-4">Makers</h2>
+      <p class="text-text-light max-w-2xl mx-auto">
+        There will be a table for makers to display instruments or bows. If you are attending and would like to bring along one instrument or a bow that you have made, please mention it when you book your ticket.
+      </p>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section class="py-16 bg-bg-alt">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-semibold text-text mb-6 text-center">Location</h2>
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <p class="text-text-light mb-4">
+            The day is centred around the Old Dairy at West Dean College. Please use the West Dean Gardens entrance.
+          </p>
+          <address class="text-text-light not-italic">
+            West Dean Gardens<br />
+            Nr Chichester<br />
+            West Sussex<br />
+            PO18 0RX
+          </address>
+          <a
+            href="https://maps.app.goo.gl/avfu9qBYVxnU6QKt8"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 mt-4 text-primary-dark hover:text-text transition-colors"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            Find on Google Maps
+          </a>
+        </div>
+        <div class="aspect-video bg-border rounded-lg overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2524.5!2d-0.75!3d50.92!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sWest%20Dean%20Gardens!5e0!3m2!1sen!2suk!4v1704000000000"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="West Dean College location"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram Feed -->
+  <InstagramFeed />
+</BaseLayout>

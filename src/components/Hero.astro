@@ -1,0 +1,55 @@
+---
+interface Props {
+  title: string;
+  subtitle?: string;
+  image?: string;
+  imageAlt?: string;
+  showCta?: boolean;
+  ctaText?: string;
+  ctaHref?: string;
+}
+
+const {
+  title,
+  subtitle,
+  image = '/slice-of-a-viol.jpg',
+  imageAlt = 'Viol detail',
+  showCta = false,
+  ctaText = 'Get Tickets',
+  ctaHref = '#'
+} = Astro.props;
+---
+
+<section class="relative">
+  <!-- Background Image -->
+  <div class="absolute inset-0 overflow-hidden">
+    <img
+      src={image}
+      alt={imageAlt}
+      class="w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+    <div class="max-w-2xl">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+        {title}
+      </h1>
+      {subtitle && (
+        <p class="text-xl md:text-2xl text-white/90 mb-8">
+          {subtitle}
+        </p>
+      )}
+      {showCta && (
+        <a
+          href={ctaHref}
+          class="inline-block bg-primary hover:bg-primary-dark text-text font-semibold px-8 py-3 rounded-lg transition-colors"
+        >
+          {ctaText}
+        </a>
+      )}
+    </div>
+  </div>
+</section>

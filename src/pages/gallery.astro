@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Gallery from '../components/Gallery.astro';
+
+// Placeholder images - replace with actual instrument photos
+const images = [
+  { src: '/scroll.jpg', alt: 'Viol scroll detail', caption: 'Viol scroll' },
+  { src: '/slice-of-a-viol.jpg', alt: 'Cross section of a viol', caption: 'Cross section' },
+  // Add more images as they become available
+];
+---
+
+<BaseLayout
+  title="Gallery"
+  description="Gallery of instruments and photos from the Viol Making Symposium"
+>
+  <Hero
+    title="Gallery"
+    subtitle="Instruments and makers"
+  />
+
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-text-light text-center mb-12 max-w-2xl mx-auto">
+        A collection of instruments from our speakers and past symposium events. Click any image to view in full size.
+      </p>
+
+      {images.length > 2 ? (
+        <Gallery images={images} columns={3} />
+      ) : (
+        <div class="text-center py-12 bg-bg-alt rounded-lg">
+          <p class="text-text-light mb-4">More images coming soon</p>
+          <p class="text-sm text-text-light">
+            We're building a collection of instrument photos from our speakers and events.
+          </p>
+          <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+            {images.map((image) => (
+              <div class="rounded-lg overflow-hidden">
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  class="w-full h-64 object-cover"
+                />
+                {image.caption && (
+                  <p class="p-3 text-sm text-text-light bg-white">{image.caption}</p>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  </section>
+</BaseLayout>
