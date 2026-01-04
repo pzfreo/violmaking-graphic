@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import AgendaTable from '../components/AgendaTable.astro';
+import VideoEmbed from '../components/VideoEmbed.astro';
+
+const agenda = [
+  { time: '09:30 - 09:45', title: 'Welcome and introduction' },
+  { time: '09:45 - 11:00', title: 'Joachim Tielke. Four Barytons and aspects of construction', speaker: 'Shem Mackey and Luke Challinor' },
+  { time: '10:45 - 11:15', title: 'Coffee Break', isBreak: true },
+  { time: '11:15 - 12:30', title: 'Experimenting with diverse European and tropical wood species for historical bow making', speaker: 'Nelly Poidevin' },
+  { time: '12:30 - 13:30', title: 'Lunch', isBreak: true },
+  { time: '13:45 - 15:00', title: 'The Resurrection of the 1703 Edward Lewis Viol', speaker: 'Jane Julier and Henrik Persson' },
+  { time: '15:00 - 15:30', title: 'Tea Break', isBreak: true },
+  { time: '15:30 - 16:45', title: 'The Viols of Jacobus Stainer', speaker: 'Tilman Muthesius' },
+  { time: '16:45 - 18:00', title: 'Workshop tour' },
+  { time: '18:00 - 19:30', title: 'Dinner', description: 'Please pre-book if you are staying for dinner', isBreak: true },
+  { time: '19:30 - 21:00', title: 'Informal concert in the Oak Hall' },
+];
+
+const videos = [
+  { id: '1Ro2CHvpknk', title: 'Shem Mackey and Luke Challinor - Tielke\'s Barytons' },
+  { id: 'MuJ_FHCTnIM', title: 'Nelly Poidevin - Wood for Bows' },
+  { id: '2dWmU71Ocj4', title: 'Jane Julier and Henrik Persson - Lewis Viol 1703' },
+  { id: 'VJow46xOjlE', title: 'Tilman Muthesius - The Viols of Stainer' },
+];
+---
+
+<BaseLayout
+  title="2024 Symposium"
+  description="First Viol Making Symposium at West Dean College, Friday October 4th, 2024"
+>
+  <Hero
+    title="2024 Symposium"
+    subtitle="West Dean College, Friday October 4th, 2024"
+  />
+
+  <!-- Introduction -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-lg text-text-light mb-4">
+        Friday, October 4th, 2024 at West Dean College, Sussex, UK <em>and streamed online</em>
+      </p>
+      <p class="text-text-light">09:30 to 18:00 BST</p>
+    </div>
+  </section>
+
+  <!-- Recordings -->
+  <section class="py-16 bg-bg-alt">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-semibold text-text mb-4 text-center">Recordings</h2>
+      <p class="text-text-light text-center mb-8">
+        Unfortunately, the video recorded from the streaming is not perfect. We learnt a lot from running the day and hopefully next time will do better recordings. However, the recordings are still an invaluable resource.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        {videos.map((video) => (
+          <div>
+            <VideoEmbed videoId={video.id} title={video.title} />
+            <p class="mt-2 text-sm text-text-light">{video.title}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Agenda -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-semibold text-text mb-8 text-center">Agenda</h2>
+      <AgendaTable items={agenda} />
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import SubscribeForm from '../components/SubscribeForm.astro';
+---
+
+<BaseLayout
+  title="Subscribe"
+  description="Subscribe to the Viol Making Symposium mailing list for updates"
+>
+  <Hero
+    title="Subscribe"
+    subtitle="Join the mailing list"
+  />
+
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <SubscribeForm />
+    </div>
+  </section>
+</BaseLayout>

@@ -1,17 +1,33 @@
-# Chulapa 101
+# Viol Making Symposium
 
-Click [**Use this template**](https://github.com/dieghernan/chulapa-101/generate) button above for cloning this repo and get started with [Chulapa Jekyll theme](https://github.com/dieghernan/chulapa).
+Website for the Viol Making Symposium at West Dean College.
 
-Contains basic configuration to get you a site with:
+Built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com).
 
-- [Sample posts](./_posts/) and [paginated blog index](./blog/index.html).
-- [Sample collection](./_cheatsheet/) with Markdown and kramdown cheatsheets and [collection index](./_pages/cheatsheet.md).
-- Archive pages for posts grouped by year, category, and tag.
-- Demo page with the different Bootstrap components and how they look with the actual skin settings.
-- Sample 404 page.
-- Site search with Lunr.
-- Sample [`_config`](_config.yml) with minimal configuration.
-- Sample [`algolia-search.yml`](algolia-search.yml) for using Algolia+GitHub Actions. More guidance in the top of the file.
-- Sample files for extending the theme with your [own scripts](./_includes/custom/) and [css](./assets/css/).
+## Development
 
-[Configure as necessary](https://dieghernan.github.io/chulapa/docs/02-config) and replace sample content with your own.
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+## Deployment
+
+Deployed automatically to Netlify on push to `main`.
+
+## Adding Content
+
+### Speaker Data
+Speaker information is stored in `src/content/speakers/` as YAML files, organized by year.
+
+### Gallery Images
+Add instrument photos to `public/images/instruments/` and update `src/pages/gallery.astro`.
+
+### Instagram Feed
+To enable the Instagram feed, sign up at [behold.so](https://behold.so), connect the @viol.making account, and add your feed ID to `src/components/InstagramFeed.astro`.

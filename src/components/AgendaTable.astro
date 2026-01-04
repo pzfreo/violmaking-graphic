@@ -1,0 +1,48 @@
+---
+interface AgendaItem {
+  time: string;
+  title: string;
+  speaker?: string;
+  description?: string;
+  isBreak?: boolean;
+}
+
+interface Props {
+  items: AgendaItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<div class="overflow-x-auto">
+  <table class="w-full">
+    <tbody class="divide-y divide-border">
+      {items.map((item) => (
+        <tr class:list={[
+          item.isBreak ? 'bg-bg-alt' : 'bg-white'
+        ]}>
+          <td class="py-4 pr-4 text-sm font-medium text-text-light whitespace-nowrap align-top w-32">
+            {item.time}
+          </td>
+          <td class="py-4 align-top">
+            {item.speaker ? (
+              <div>
+                <p class="font-semibold text-text">{item.speaker}</p>
+                <p class="text-text-light mt-1">{item.title}</p>
+                {item.description && (
+                  <p class="text-sm text-text-light mt-1 italic">{item.description}</p>
+                )}
+              </div>
+            ) : (
+              <p class:list={[
+                item.isBreak ? 'text-text-light' : 'font-semibold text-text'
+              ]}>
+                {item.title}
+              </p>
+            )}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
