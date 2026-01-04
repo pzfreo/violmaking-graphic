@@ -3,17 +3,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 
 const images = [
-  { src: '/images/instruments/carlos-pineda-1.jpeg', alt: 'Carlos Pineda - Stradivari bass viol reconstruction', caption: 'Stradivari bass viol', maker: 'Carlos Pineda' },
-  { src: '/images/instruments/carlos-pineda-2.jpeg', alt: 'Carlos Pineda - Instrument detail', caption: 'Detail', maker: 'Carlos Pineda' },
-  { src: '/images/instruments/carlos-pineda-3.jpeg', alt: 'Carlos Pineda - Viol construction', caption: 'Construction', maker: 'Carlos Pineda' },
-  { src: '/images/instruments/carlos-pineda-4.jpeg', alt: 'Carlos Pineda - Instrument view', caption: 'Instrument', maker: 'Carlos Pineda' },
-  { src: '/images/instruments/carlos-pineda-5.jpeg', alt: 'Carlos Pineda - Bass viol', caption: 'Bass viol', maker: 'Carlos Pineda' },
-  { src: '/images/instruments/ercole-dervic-1.jpg', alt: 'Ercole e Dervic - Festooned viol', caption: 'Festooned viol', maker: 'Ercole e Dervic' },
-  { src: '/images/instruments/ercole-dervic-2.jpg', alt: 'Ercole e Dervic - Instrument detail', caption: 'Detail', maker: 'Ercole e Dervic' },
-  { src: '/images/instruments/ercole-dervic-3.jpg', alt: 'Ercole e Dervic - Viol', caption: 'Viol', maker: 'Ercole e Dervic' },
-  { src: '/images/instruments/ercole-dervic-4.jpg', alt: 'Ercole e Dervic - Construction', caption: 'Construction', maker: 'Ercole e Dervic' },
-  { src: '/images/instruments/ercole-dervic-5.jpg', alt: 'Ercole e Dervic - Instrument', caption: 'Instrument', maker: 'Ercole e Dervic' },
-  { src: '/images/instruments/ercole-dervic-6.jpg', alt: 'Ercole e Dervic - Detail', caption: 'Detail', maker: 'Ercole e Dervic' },
+  { src: '/images/instruments/carlos-pineda-1.jpeg', alt: 'Carlos Pineda', maker: 'Carlos Pineda' },
+  { src: '/images/instruments/carlos-pineda-2.jpeg', alt: 'Carlos Pineda', maker: 'Carlos Pineda' },
+  { src: '/images/instruments/carlos-pineda-3.jpeg', alt: 'Carlos Pineda', maker: 'Carlos Pineda' },
+  { src: '/images/instruments/carlos-pineda-4.jpeg', alt: 'Carlos Pineda', maker: 'Carlos Pineda' },
+  { src: '/images/instruments/carlos-pineda-5.jpeg', alt: 'Carlos Pineda', maker: 'Carlos Pineda' },
+  { src: '/images/instruments/ercole-dervic-1.jpg', alt: 'Ercole e Dervic', maker: 'Ercole e Dervic' },
+  { src: '/images/instruments/ercole-dervic-2.jpg', alt: 'Ercole e Dervic', maker: 'Ercole e Dervic' },
+  { src: '/images/instruments/ercole-dervic-3.jpg', alt: 'Ercole e Dervic', maker: 'Ercole e Dervic' },
+  { src: '/images/instruments/ercole-dervic-4.jpg', alt: 'Ercole e Dervic', maker: 'Ercole e Dervic' },
+  { src: '/images/instruments/ercole-dervic-5.jpg', alt: 'Ercole e Dervic', maker: 'Ercole e Dervic' },
+  { src: '/images/instruments/ercole-dervic-6.jpg', alt: 'Ercole e Dervic', maker: 'Ercole e Dervic' },
 ];
 
 const makers = [...new Set(images.map(img => img.maker))];
@@ -59,7 +59,7 @@ const makers = [...new Set(images.map(img => img.maker))];
             href={image.src}
             class="glightbox gallery-item group block overflow-hidden rounded-lg bg-bg-alt"
             data-gallery="gallery"
-            data-glightbox={`title: ${image.maker} - ${image.caption}`}
+            data-glightbox={`title: ${image.maker}`}
             data-maker={image.maker}
           >
             <div class="aspect-square overflow-hidden">
@@ -72,7 +72,6 @@ const makers = [...new Set(images.map(img => img.maker))];
             </div>
             <div class="p-3">
               <p class="text-sm font-medium text-text">{image.maker}</p>
-              <p class="text-sm text-text-light">{image.caption}</p>
             </div>
           </a>
         ))}
