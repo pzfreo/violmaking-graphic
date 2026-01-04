@@ -1,23 +1,22 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
-import Gallery from '../components/Gallery.astro';
 
 const images = [
-  { src: '/images/instruments/carlos-pineda-1.jpeg', alt: 'Carlos Pineda - Stradivari bass viol reconstruction', caption: 'Carlos Pineda - Stradivari bass viol' },
-  { src: '/images/instruments/carlos-pineda-2.jpeg', alt: 'Carlos Pineda - Instrument detail', caption: 'Carlos Pineda - Detail' },
-  { src: '/images/instruments/carlos-pineda-3.jpeg', alt: 'Carlos Pineda - Viol construction', caption: 'Carlos Pineda - Construction' },
-  { src: '/images/instruments/carlos-pineda-4.jpeg', alt: 'Carlos Pineda - Instrument view', caption: 'Carlos Pineda' },
-  { src: '/images/instruments/carlos-pineda-5.jpeg', alt: 'Carlos Pineda - Bass viol', caption: 'Carlos Pineda - Bass viol' },
-  { src: '/images/instruments/ercole-dervic-1.jpg', alt: 'Ercole e Dervic - Festooned viol', caption: 'Ercole e Dervic' },
-  { src: '/images/instruments/ercole-dervic-2.jpg', alt: 'Ercole e Dervic - Instrument detail', caption: 'Ercole e Dervic' },
-  { src: '/images/instruments/ercole-dervic-3.jpg', alt: 'Ercole e Dervic - Viol', caption: 'Ercole e Dervic' },
-  { src: '/images/instruments/ercole-dervic-4.jpg', alt: 'Ercole e Dervic - Construction', caption: 'Ercole e Dervic' },
-  { src: '/images/instruments/ercole-dervic-5.jpg', alt: 'Ercole e Dervic - Instrument', caption: 'Ercole e Dervic' },
-  { src: '/images/instruments/ercole-dervic-6.jpg', alt: 'Ercole e Dervic - Detail', caption: 'Ercole e Dervic' },
-  { src: '/scroll.jpg', alt: 'Viol scroll detail', caption: 'Viol scroll' },
-  { src: '/slice-of-a-viol.jpg', alt: 'Cross section of a viol', caption: 'Cross section' },
+  { src: '/images/instruments/carlos-pineda-1.jpeg', alt: 'Carlos Pineda - Stradivari bass viol reconstruction', caption: 'Stradivari bass viol', maker: 'Carlos Pineda' },
+  { src: '/images/instruments/carlos-pineda-2.jpeg', alt: 'Carlos Pineda - Instrument detail', caption: 'Detail', maker: 'Carlos Pineda' },
+  { src: '/images/instruments/carlos-pineda-3.jpeg', alt: 'Carlos Pineda - Viol construction', caption: 'Construction', maker: 'Carlos Pineda' },
+  { src: '/images/instruments/carlos-pineda-4.jpeg', alt: 'Carlos Pineda - Instrument view', caption: 'Instrument', maker: 'Carlos Pineda' },
+  { src: '/images/instruments/carlos-pineda-5.jpeg', alt: 'Carlos Pineda - Bass viol', caption: 'Bass viol', maker: 'Carlos Pineda' },
+  { src: '/images/instruments/ercole-dervic-1.jpg', alt: 'Ercole e Dervic - Festooned viol', caption: 'Festooned viol', maker: 'Ercole e Dervic' },
+  { src: '/images/instruments/ercole-dervic-2.jpg', alt: 'Ercole e Dervic - Instrument detail', caption: 'Detail', maker: 'Ercole e Dervic' },
+  { src: '/images/instruments/ercole-dervic-3.jpg', alt: 'Ercole e Dervic - Viol', caption: 'Viol', maker: 'Ercole e Dervic' },
+  { src: '/images/instruments/ercole-dervic-4.jpg', alt: 'Ercole e Dervic - Construction', caption: 'Construction', maker: 'Ercole e Dervic' },
+  { src: '/images/instruments/ercole-dervic-5.jpg', alt: 'Ercole e Dervic - Instrument', caption: 'Instrument', maker: 'Ercole e Dervic' },
+  { src: '/images/instruments/ercole-dervic-6.jpg', alt: 'Ercole e Dervic - Detail', caption: 'Detail', maker: 'Ercole e Dervic' },
 ];
+
+const makers = [...new Set(images.map(img => img.maker))];
 ---
 
 <BaseLayout
@@ -31,34 +30,109 @@ const images = [
 
   <section class="py-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <p class="text-text-light text-center mb-12 max-w-2xl mx-auto">
-        A collection of instruments from our speakers and past symposium events. Click any image to view in full size.
+      <p class="text-text-light text-center mb-8 max-w-2xl mx-auto">
+        A collection of instruments from our speakers. Click any image to view in full size.
       </p>
 
-      {images.length > 2 ? (
-        <Gallery images={images} columns={3} />
-      ) : (
-        <div class="text-center py-12 bg-bg-alt rounded-lg">
-          <p class="text-text-light mb-4">More images coming soon</p>
-          <p class="text-sm text-text-light">
-            We're building a collection of instrument photos from our speakers and events.
-          </p>
-          <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            {images.map((image) => (
-              <div class="rounded-lg overflow-hidden">
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  class="w-full h-64 object-cover"
-                />
-                {image.caption && (
-                  <p class="p-3 text-sm text-text-light bg-white">{image.caption}</p>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
+      <!-- Filter buttons -->
+      <div class="flex flex-wrap justify-center gap-3 mb-12">
+        <button
+          class="filter-btn px-4 py-2 rounded-lg font-medium transition-colors bg-primary text-white"
+          data-maker="all"
+        >
+          All
+        </button>
+        {makers.map((maker) => (
+          <button
+            class="filter-btn px-4 py-2 rounded-lg font-medium transition-colors bg-bg-alt text-text-light hover:bg-border"
+            data-maker={maker}
+          >
+            {maker}
+          </button>
+        ))}
+      </div>
+
+      <!-- Gallery grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="gallery-grid">
+        {images.map((image) => (
+          <a
+            href={image.src}
+            class="glightbox gallery-item group block overflow-hidden rounded-lg bg-bg-alt"
+            data-gallery="gallery"
+            data-glightbox={`title: ${image.maker} - ${image.caption}`}
+            data-maker={image.maker}
+          >
+            <div class="aspect-square overflow-hidden">
+              <img
+                src={image.src}
+                alt={image.alt}
+                loading="lazy"
+                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+            <div class="p-3">
+              <p class="text-sm font-medium text-text">{image.maker}</p>
+              <p class="text-sm text-text-light">{image.caption}</p>
+            </div>
+          </a>
+        ))}
+      </div>
     </div>
   </section>
 </BaseLayout>
+
+<script>
+  import GLightbox from 'glightbox';
+  import 'glightbox/dist/css/glightbox.min.css';
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // Initialize lightbox
+    const lightbox = GLightbox({
+      selector: '.glightbox:not(.hidden)',
+      touchNavigation: true,
+      loop: true,
+    });
+
+    // Filter functionality
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const maker = btn.getAttribute('data-maker');
+
+        // Update button styles
+        filterBtns.forEach(b => {
+          b.classList.remove('bg-primary', 'text-white');
+          b.classList.add('bg-bg-alt', 'text-text-light');
+        });
+        btn.classList.remove('bg-bg-alt', 'text-text-light');
+        btn.classList.add('bg-primary', 'text-white');
+
+        // Filter images
+        galleryItems.forEach(item => {
+          const itemMaker = item.getAttribute('data-maker');
+          if (maker === 'all' || itemMaker === maker) {
+            item.classList.remove('hidden');
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+
+        // Reinitialize lightbox with visible items
+        lightbox.destroy();
+        GLightbox({
+          selector: '.glightbox:not(.hidden)',
+          touchNavigation: true,
+          loop: true,
+        });
+      });
+    });
+  });
+</script>
+
+<style>
+  .hidden {
+    display: none;
+  }
+</style>
