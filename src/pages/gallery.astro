@@ -1,30 +1,55 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
+import { Image } from 'astro:assets';
+
+// Import images from assets
+import andreasLinos1 from '../assets/instruments/andreas-linos-1.jpeg';
+import andreasLinos2 from '../assets/instruments/andreas-linos-2.jpeg';
+import andreasLinos3 from '../assets/instruments/andreas-linos-3.jpeg';
+import andreasLinos4 from '../assets/instruments/andreas-linos-4.jpeg';
+import andreasLinos5 from '../assets/instruments/andreas-linos-5.jpeg';
+import andreasLinos6 from '../assets/instruments/andreas-linos-6.jpeg';
+import carlosPineda1 from '../assets/instruments/carlos-pineda-1.jpeg';
+import carlosPineda2 from '../assets/instruments/carlos-pineda-2.jpeg';
+import carlosPineda3 from '../assets/instruments/carlos-pineda-3.jpeg';
+import carlosPineda4 from '../assets/instruments/carlos-pineda-4.jpeg';
+import carlosPineda5 from '../assets/instruments/carlos-pineda-5.jpeg';
+import ercoleDervic1 from '../assets/instruments/ercole-dervic-1.jpg';
+import ercoleDervic2 from '../assets/instruments/ercole-dervic-2.jpg';
+import ercoleDervic3 from '../assets/instruments/ercole-dervic-3.jpg';
+import ercoleDervic4 from '../assets/instruments/ercole-dervic-4.jpg';
+import ercoleDervic5 from '../assets/instruments/ercole-dervic-5.jpg';
+import ercoleDervic6 from '../assets/instruments/ercole-dervic-6.jpg';
+import johnnieHill1 from '../assets/instruments/johnnie-hill-1.jpeg';
+import johnnieHill2 from '../assets/instruments/johnnie-hill-2.jpeg';
+import johnnieHill3 from '../assets/instruments/johnnie-hill-3.jpeg';
+import johnnieHill4 from '../assets/instruments/johnnie-hill-4.jpeg';
+import johnnieHill5 from '../assets/instruments/johnnie-hill-5.jpeg';
 
 const images = [
-  { src: '/images/instruments/andreas-linos-1.jpeg', alt: 'Andreas Linos', maker: 'Andreas Linos' },
-  { src: '/images/instruments/andreas-linos-2.jpeg', alt: 'Andreas Linos', maker: 'Andreas Linos' },
-  { src: '/images/instruments/andreas-linos-3.jpeg', alt: 'Andreas Linos', maker: 'Andreas Linos' },
-  { src: '/images/instruments/andreas-linos-4.jpeg', alt: 'Andreas Linos', maker: 'Andreas Linos' },
-  { src: '/images/instruments/andreas-linos-5.jpeg', alt: 'Andreas Linos', maker: 'Andreas Linos' },
-  { src: '/images/instruments/andreas-linos-6.jpeg', alt: 'Andreas Linos', maker: 'Andreas Linos' },
-  { src: '/images/instruments/carlos-pineda-1.jpeg', alt: 'Carlos Pineda', maker: 'Carlos Pineda' },
-  { src: '/images/instruments/carlos-pineda-2.jpeg', alt: 'Carlos Pineda', maker: 'Carlos Pineda' },
-  { src: '/images/instruments/carlos-pineda-3.jpeg', alt: 'Carlos Pineda', maker: 'Carlos Pineda' },
-  { src: '/images/instruments/carlos-pineda-4.jpeg', alt: 'Carlos Pineda', maker: 'Carlos Pineda' },
-  { src: '/images/instruments/carlos-pineda-5.jpeg', alt: 'Carlos Pineda', maker: 'Carlos Pineda' },
-  { src: '/images/instruments/ercole-dervic-1.jpg', alt: 'Ercole e Dervic', maker: 'Ercole e Dervic' },
-  { src: '/images/instruments/ercole-dervic-2.jpg', alt: 'Ercole e Dervic', maker: 'Ercole e Dervic' },
-  { src: '/images/instruments/ercole-dervic-3.jpg', alt: 'Ercole e Dervic', maker: 'Ercole e Dervic' },
-  { src: '/images/instruments/ercole-dervic-4.jpg', alt: 'Ercole e Dervic', maker: 'Ercole e Dervic' },
-  { src: '/images/instruments/ercole-dervic-5.jpg', alt: 'Ercole e Dervic', maker: 'Ercole e Dervic' },
-  { src: '/images/instruments/ercole-dervic-6.jpg', alt: 'Ercole e Dervic', maker: 'Ercole e Dervic' },
-  { src: '/images/instruments/johnnie-hill-1.jpeg', alt: 'Johnnie Hill', maker: 'Johnnie Hill' },
-  { src: '/images/instruments/johnnie-hill-2.jpeg', alt: 'Johnnie Hill', maker: 'Johnnie Hill' },
-  { src: '/images/instruments/johnnie-hill-3.jpeg', alt: 'Johnnie Hill', maker: 'Johnnie Hill' },
-  { src: '/images/instruments/johnnie-hill-4.jpeg', alt: 'Johnnie Hill', maker: 'Johnnie Hill' },
-  { src: '/images/instruments/johnnie-hill-5.jpeg', alt: 'Johnnie Hill', maker: 'Johnnie Hill' },
+  { thumbnail: andreasLinos1, fullRes: '/images/instruments/andreas-linos-1.jpeg', alt: 'Andreas Linos', maker: 'Andreas Linos' },
+  { thumbnail: andreasLinos2, fullRes: '/images/instruments/andreas-linos-2.jpeg', alt: 'Andreas Linos', maker: 'Andreas Linos' },
+  { thumbnail: andreasLinos3, fullRes: '/images/instruments/andreas-linos-3.jpeg', alt: 'Andreas Linos', maker: 'Andreas Linos' },
+  { thumbnail: andreasLinos4, fullRes: '/images/instruments/andreas-linos-4.jpeg', alt: 'Andreas Linos', maker: 'Andreas Linos' },
+  { thumbnail: andreasLinos5, fullRes: '/images/instruments/andreas-linos-5.jpeg', alt: 'Andreas Linos', maker: 'Andreas Linos' },
+  { thumbnail: andreasLinos6, fullRes: '/images/instruments/andreas-linos-6.jpeg', alt: 'Andreas Linos', maker: 'Andreas Linos' },
+  { thumbnail: carlosPineda1, fullRes: '/images/instruments/carlos-pineda-1.jpeg', alt: 'Carlos Pineda', maker: 'Carlos Pineda' },
+  { thumbnail: carlosPineda2, fullRes: '/images/instruments/carlos-pineda-2.jpeg', alt: 'Carlos Pineda', maker: 'Carlos Pineda' },
+  { thumbnail: carlosPineda3, fullRes: '/images/instruments/carlos-pineda-3.jpeg', alt: 'Carlos Pineda', maker: 'Carlos Pineda' },
+  { thumbnail: carlosPineda4, fullRes: '/images/instruments/carlos-pineda-4.jpeg', alt: 'Carlos Pineda', maker: 'Carlos Pineda' },
+  { thumbnail: carlosPineda5, fullRes: '/images/instruments/carlos-pineda-5.jpeg', alt: 'Carlos Pineda', maker: 'Carlos Pineda' },
+  { thumbnail: ercoleDervic1, fullRes: '/images/instruments/ercole-dervic-1.jpg', alt: 'Ercole e Dervic', maker: 'Ercole e Dervic' },
+  { thumbnail: ercoleDervic2, fullRes: '/images/instruments/ercole-dervic-2.jpg', alt: 'Ercole e Dervic', maker: 'Ercole e Dervic' },
+  { thumbnail: ercoleDervic3, fullRes: '/images/instruments/ercole-dervic-3.jpg', alt: 'Ercole e Dervic', maker: 'Ercole e Dervic' },
+  { thumbnail: ercoleDervic4, fullRes: '/images/instruments/ercole-dervic-4.jpg', alt: 'Ercole e Dervic', maker: 'Ercole e Dervic' },
+  { thumbnail: ercoleDervic5, fullRes: '/images/instruments/ercole-dervic-5.jpg', alt: 'Ercole e Dervic', maker: 'Ercole e Dervic' },
+  { thumbnail: ercoleDervic6, fullRes: '/images/instruments/ercole-dervic-6.jpg', alt: 'Ercole e Dervic', maker: 'Ercole e Dervic' },
+  { thumbnail: johnnieHill1, fullRes: '/images/instruments/johnnie-hill-1.jpeg', alt: 'Johnnie Hill', maker: 'Johnnie Hill' },
+  { thumbnail: johnnieHill2, fullRes: '/images/instruments/johnnie-hill-2.jpeg', alt: 'Johnnie Hill', maker: 'Johnnie Hill' },
+  { thumbnail: johnnieHill3, fullRes: '/images/instruments/johnnie-hill-3.jpeg', alt: 'Johnnie Hill', maker: 'Johnnie Hill' },
+  { thumbnail: johnnieHill4, fullRes: '/images/instruments/johnnie-hill-4.jpeg', alt: 'Johnnie Hill', maker: 'Johnnie Hill' },
+  { thumbnail: johnnieHill5, fullRes: '/images/instruments/johnnie-hill-5.jpeg', alt: 'Johnnie Hill', maker: 'Johnnie Hill' },
 ];
 
 const makers = [...new Set(images.map(img => img.maker))];
@@ -67,18 +92,20 @@ const makers = [...new Set(images.map(img => img.maker))];
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="gallery-grid">
         {images.map((image) => (
           <a
-            href={image.src}
+            href={image.fullRes}
             class="glightbox gallery-item group block overflow-hidden rounded-lg bg-bg-alt"
             data-gallery="gallery"
             data-glightbox={`title: ${image.maker}`}
             data-maker={image.maker}
           >
             <div class="aspect-square overflow-hidden">
-              <img
-                src={image.src}
+              <Image
+                src={image.thumbnail}
                 alt={image.alt}
-                loading="lazy"
+                width={600}
+                height={600}
                 class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                loading="lazy"
               />
             </div>
             <div class="p-3">
