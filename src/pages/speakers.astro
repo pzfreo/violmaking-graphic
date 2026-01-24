@@ -13,14 +13,14 @@ const speakers = [
     headshot: '/images/speakers/andreas-linos.jpg',
   },
   {
-    name: 'Nedim Dervic',
+    name: 'Marianna Ercole & Nedim Dervic',
     subtitle: 'Ercole & Dervic Luthiers',
     bio: 'Marianna Ercole and Nedim Dervic are luthiers trained at the Civica Scuola di Liuteria in Milan, now specializing in the construction and restoration of viola da gamba. Their workshop in Mondovì, Italy, combines traditional violin-making techniques with meticulous historical research. Their highly documented and philological approach aims for accurate reconstruction of original instruments in historically and acoustically consistent contexts. Through extensive study of museum collections across Europe, they reference 17th and 18th-century models by Colichon, Bertrand, Busch, Hiltz, and Blunt. In 2019, they won the Gold Medal for Viola da Gamba at the Malta International Baroque Instrument Competition.',
     talk: 'Ernst Busch and Paul Hiltz, Festooned Viols of Nuremberg',
     website: 'https://www.carion.it',
     instagram: 'https://www.instagram.com/ercole_dervic',
     gallery: 'Ercole e Dervic',
-    headshot: '/images/speakers/nedim-dervic.jpg',
+    headshots: ['/images/speakers/marianna-ercole.jpg', '/images/speakers/nedim-dervic.jpg'],
   },
   {
     name: 'Carlos Pineda',
@@ -74,23 +74,38 @@ const speakers = [
             <div class="grid md:grid-cols-3 gap-8">
               <!-- Headshot -->
               <div class="md:col-span-1">
-                <div class="aspect-square rounded-lg overflow-hidden bg-bg-alt flex items-center justify-center">
-                  {speaker.headshot.includes('.jpg') ? (
+                {speaker.headshots ? (
+                  <div class="grid grid-cols-2 gap-2">
+                    {speaker.headshots.map((headshot) => (
+                      <div class="aspect-square rounded-lg overflow-hidden bg-bg-alt">
+                        <img
+                          src={headshot}
+                          alt={speaker.name}
+                          class="w-full h-full object-cover"
+                          loading="lazy"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                ) : speaker.headshot && speaker.headshot.includes('.jpg') ? (
+                  <div class="aspect-square rounded-lg overflow-hidden bg-bg-alt">
                     <img
                       src={speaker.headshot}
                       alt={speaker.name}
                       class="w-full h-full object-cover"
                       loading="lazy"
                     />
-                  ) : (
+                  </div>
+                ) : (
+                  <div class="aspect-square rounded-lg overflow-hidden bg-bg-alt flex items-center justify-center">
                     <div class="text-center p-6">
                       <div class="w-20 h-20 mx-auto mb-3 rounded-full bg-primary/10 flex items-center justify-center">
                         <span class="text-3xl font-bold text-primary">{speaker.name.split(' ').map(n => n[0]).join('')}</span>
                       </div>
                       <p class="text-sm text-text-light">Photo coming soon</p>
                     </div>
-                  )}
-                </div>
+                  </div>
+                )}
                 {speaker.gallery && (
                   <div class="mt-4 text-center">
                     <a
