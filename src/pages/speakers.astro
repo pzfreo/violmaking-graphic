@@ -1,0 +1,151 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+
+const speakers = [
+  {
+    name: 'Andreas Linos',
+    bio: 'Andreas Linos is a viola da gamba player and maker who combines artistic performance with lutherie craftsmanship. Born to a painter mother and architect father, he grew up at the crossroads of arts and cultures. Passionate about the viola da gamba from age 11, he studied with Nima Ben David at the Conservatoire de Boulogne-Billancourt, winning first prize in 2006. In parallel with his musical studies, he attended the Versailles School of Architecture and trained in lute-making at the workshop of Bernard Prunier. He performs with leading early music ensembles across Europe.',
+    talk: 'The neck joint of Michel Collichon\'s 7-string viols: a new approach, hypothesis and results',
+    website: '',
+    instagram: '',
+    gallery: 'Andreas Linos',
+    headshot: '/images/speakers/andreas-linos.jpg',
+  },
+  {
+    name: 'Nedim Dervic',
+    subtitle: 'Ercole & Dervic Luthiers',
+    bio: 'Marianna Ercole and Nedim Dervic are luthiers trained at the Civica Scuola di Liuteria in Milan, now specializing in the construction and restoration of viola da gamba. Their workshop in Mondovì, Italy, combines traditional violin-making techniques with meticulous historical research. Their highly documented and philological approach aims for accurate reconstruction of original instruments in historically and acoustically consistent contexts. Through extensive study of museum collections across Europe, they reference 17th and 18th-century models by Colichon, Bertrand, Busch, Hiltz, and Blunt. In 2019, they won the Gold Medal for Viola da Gamba at the Malta International Baroque Instrument Competition.',
+    talk: 'Ernst Busch and Paul Hiltz, Festooned Viols of Nuremberg',
+    website: 'https://www.carion.it',
+    instagram: 'https://www.instagram.com/ercole_dervic',
+    gallery: 'Ercole e Dervic',
+    headshot: '/images/speakers/nedim-dervic.jpg',
+  },
+  {
+    name: 'Carlos Pineda',
+    bio: 'Carlos Pineda is a viola da gamba luthier with over 25 years of experience building early music instruments. Operating under the name Baroque Studio, he specializes in the construction of historical bowed string instruments from the Baroque period. Carlos teaches at the prestigious Academia Cremonensis in Cremona, Italy, where he instructs students in the design and construction of viola da gamba, emphasizing the main organological characteristics according to region, era, and style of major European luthiers. His expertise bridges practical craftsmanship with historical instrument-making pedagogy, training the next generation of specialist makers.',
+    talk: 'Bassa alla francesa da sette corde. Hypothesis for the reconstruction of a bass viol by Stradivari',
+    website: 'https://carlosluthier.webnode.es/',
+    instagram: 'https://www.instagram.com/carlosluthier_',
+    gallery: 'Carlos Pineda',
+    headshot: '/images/speakers/carlos-pineda.jpg',
+  },
+  {
+    name: 'Jonathan Hill',
+    bio: 'Jonathan Hill is a London-based luthier and maker of historic and modern stringed instruments. He trained in baroque and early instrument making with Shem Mackey and Roger Rose at West Dean College, passing with distinction. After working as a violin maker under Roger Hansell in Yorkshire, he began freelancing across European workshops. In 2016, he received a Winston Churchill Travelling Fellowship to study with renowned oud maker Mustafa Copçuoğlu in Istanbul. Jonathan specializes in violas d\'amore and has made more consecutive instruments than any other maker, living or historical. In 2023, he won the inaugural Woodworker of the Year Award.',
+    talk: 'Viola Diablo - the devil at the crossroads of tradition',
+    website: 'https://www.jonathanhill-luthier.com/',
+    instagram: '',
+    gallery: 'Johnnie Hill',
+    headshot: '/images/speakers/jonathan-hill.jpg',
+  },
+  {
+    name: 'Charlie Wild',
+    role: 'Performer',
+    bio: 'Charlie Wild is a violinist and composer based in Worcestershire. She studied with Joyce Ingledew and Devorina Gamalova in Hampshire before gaining a BMus(Hons) from Birmingham Conservatoire in 2009. Charlie performs regularly throughout the UK and is violinist and composer with string quartet The Froe, Propellor Ensemble, and The Fair Rain. She teaches violin from her home studio and in 2024 embarked on a new project to create a new kind of instrument, combining forgotten features of period instruments within the familiar form of today\'s violin. She will perform with Jonathan Hill on the Viola Diablo.',
+    talk: 'Viola Diablo - the devil at the crossroads of tradition',
+    website: 'https://charliewild.co.uk/',
+    instagram: '',
+    gallery: '',
+    headshot: '/images/speakers/charlie-wild.jpg',
+  },
+];
+---
+
+<BaseLayout
+  title="Speakers"
+  description="Meet the speakers and makers at the 2026 Viol Making Symposium"
+>
+  <Hero
+    title="Speakers"
+    subtitle="Meet our 2026 speakers"
+  />
+
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-text-light text-center mb-12 max-w-2xl mx-auto">
+        Our speakers bring together expertise in historical research, instrument making, and performance to share their knowledge and passion for viola da gamba.
+      </p>
+
+      <div class="space-y-16">
+        {speakers.map((speaker) => (
+          <div class="border-b border-border pb-16 last:border-b-0">
+            <div class="grid md:grid-cols-3 gap-8">
+              <!-- Headshot -->
+              <div class="md:col-span-1">
+                <div class="aspect-square rounded-lg overflow-hidden bg-bg-alt flex items-center justify-center">
+                  <div class="text-center p-6">
+                    <div class="w-20 h-20 mx-auto mb-3 rounded-full bg-primary/10 flex items-center justify-center">
+                      <span class="text-3xl font-bold text-primary">{speaker.name.split(' ').map(n => n[0]).join('')}</span>
+                    </div>
+                    <p class="text-sm text-text-light">Photo coming soon</p>
+                  </div>
+                </div>
+                {speaker.gallery && (
+                  <div class="mt-4 text-center">
+                    <a
+                      href={`/gallery#${speaker.gallery.toLowerCase().replace(/\s+/g, '-')}`}
+                      class="text-sm text-primary hover:text-primary-light transition-colors"
+                    >
+                      View instruments in gallery →
+                    </a>
+                  </div>
+                )}
+              </div>
+
+              <!-- Bio -->
+              <div class="md:col-span-2">
+                <h2 class="text-2xl font-semibold text-text mb-1">{speaker.name}</h2>
+                {speaker.subtitle && (
+                  <p class="text-sm text-text-light mb-3">{speaker.subtitle}</p>
+                )}
+                {speaker.role && (
+                  <p class="text-sm text-text-light mb-3">{speaker.role}</p>
+                )}
+
+                <!-- Links -->
+                {(speaker.website || speaker.instagram) && (
+                  <div class="flex gap-3 mb-4">
+                    {speaker.website && (
+                      <a
+                        href={speaker.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-primary hover:text-primary-light transition-colors"
+                        aria-label={`${speaker.name} website`}
+                      >
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                        </svg>
+                      </a>
+                    )}
+                    {speaker.instagram && (
+                      <a
+                        href={speaker.instagram}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-primary hover:text-primary-light transition-colors"
+                        aria-label={`${speaker.name} Instagram`}
+                      >
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                      </a>
+                    )}
+                  </div>
+                )}
+
+                <h3 class="text-sm font-semibold text-primary mb-2">Talk</h3>
+                <p class="text-text-light mb-4 italic">{speaker.talk}</p>
+
+                <h3 class="text-sm font-semibold text-primary mb-2">Biography</h3>
+                <p class="text-text-light leading-relaxed">{speaker.bio}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
