@@ -4,6 +4,7 @@ import Hero from '../components/Hero.astro';
 
 const speakers = [
   {
+    slug: 'andreas-linos',
     name: 'Andreas Linos',
     bio: 'Andreas Linos is a viola da gamba player and maker who combines artistic performance with lutherie craftsmanship. Born to a painter mother and architect father, he grew up at the crossroads of arts and cultures. Passionate about the viola da gamba from age 11, he studied with Nima Ben David at the Conservatoire de Boulogne-Billancourt, winning first prize in 2006. In parallel with his musical studies, he attended the Versailles School of Architecture and trained in lute-making at the workshop of Bernard Prunier. He performs with leading early music ensembles across Europe.',
     talk: 'The neck joint of Michel Collichon\'s 7-string viols: a new approach, hypothesis and results',
@@ -13,6 +14,7 @@ const speakers = [
     headshot: '/images/speakers/andreas-linos.jpg',
   },
   {
+    slug: 'ercole-dervic',
     name: 'Marianna Ercole & Nedim Dervic',
     subtitle: 'Ercole & Dervic Luthiers',
     bio: 'Marianna Ercole and Nedim Dervic are luthiers trained at the Civica Scuola di Liuteria in Milan, now specializing in the construction and restoration of viola da gamba. Their workshop in Mondovì, Italy, combines traditional violin-making techniques with meticulous historical research. Their highly documented and philological approach aims for accurate reconstruction of original instruments in historically and acoustically consistent contexts. Through extensive study of museum collections across Europe, they reference 17th and 18th-century models by Colichon, Bertrand, Busch, Hiltz, and Blunt. In 2019, they won the Gold Medal for Viola da Gamba at the Malta International Baroque Instrument Competition.',
@@ -23,6 +25,7 @@ const speakers = [
     headshots: ['/images/speakers/marianna-ercole.jpg', '/images/speakers/nedim-dervic.jpg'],
   },
   {
+    slug: 'carlos-pineda',
     name: 'Carlos Pineda',
     bio: 'Carlos Pineda is a viola da gamba luthier with over 25 years of experience building early music instruments. Operating under the name Baroque Studio, he specializes in the construction of historical bowed string instruments from the Baroque period. Carlos teaches at the prestigious Academia Cremonensis in Cremona, Italy, where he instructs students in the design and construction of viola da gamba, emphasizing the main organological characteristics according to region, era, and style of major European luthiers. His expertise bridges practical craftsmanship with historical instrument-making pedagogy, training the next generation of specialist makers.',
     talk: 'Bassa alla francesa da sette corde. Hypothesis for the reconstruction of a bass viol by Stradivari',
@@ -32,6 +35,7 @@ const speakers = [
     headshot: '/images/speakers/carlos-pineda.jpg',
   },
   {
+    slug: 'jonathan-hill',
     name: 'Jonathan Hill',
     bio: 'Jonathan Hill is a London-based luthier and maker of historic and modern stringed instruments. He trained in baroque and early instrument making with Shem Mackey and Roger Rose at West Dean College, passing with distinction. After working as a violin maker under Roger Hansell in Yorkshire, he began freelancing across European workshops. In 2016, he received a Winston Churchill Travelling Fellowship to study with renowned oud maker Mustafa Copçuoğlu in Istanbul. Jonathan specializes in violas d\'amore and has made more consecutive instruments than any other maker, living or historical. In 2023, he won the inaugural Woodworker of the Year Award.',
     talk: 'Viola Diablo - the devil at the crossroads of tradition',
@@ -41,6 +45,7 @@ const speakers = [
     headshot: '/images/speakers/jonathan-hill.jpg',
   },
   {
+    slug: 'charlie-wild',
     name: 'Charlie Wild',
     role: 'Performer',
     bio: 'Charlie Wild is a violinist and composer based in Worcestershire. She studied with Joyce Ingledew and Devorina Gamalova in Hampshire before gaining a BMus(Hons) from Birmingham Conservatoire in 2009. Charlie performs regularly throughout the UK and is violinist and composer with string quartet The Froe, Propellor Ensemble, and The Fair Rain. She teaches violin from her home studio and in 2024 embarked on a new project to create a new kind of instrument, combining forgotten features of period instruments within the familiar form of today\'s violin. She will perform with Jonathan Hill on the Viola Diablo.',
@@ -70,7 +75,7 @@ const speakers = [
 
       <div class="space-y-16">
         {speakers.map((speaker) => (
-          <div class="border-b border-border pb-16 last:border-b-0">
+          <div id={speaker.slug} class="border-b border-border pb-16 last:border-b-0 scroll-mt-20">
             <div class="grid md:grid-cols-3 gap-8">
               <!-- Headshot -->
               <div class="md:col-span-1">
