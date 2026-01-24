@@ -75,12 +75,21 @@ const speakers = [
               <!-- Headshot -->
               <div class="md:col-span-1">
                 <div class="aspect-square rounded-lg overflow-hidden bg-bg-alt flex items-center justify-center">
-                  <div class="text-center p-6">
-                    <div class="w-20 h-20 mx-auto mb-3 rounded-full bg-primary/10 flex items-center justify-center">
-                      <span class="text-3xl font-bold text-primary">{speaker.name.split(' ').map(n => n[0]).join('')}</span>
+                  {speaker.headshot.includes('.jpg') ? (
+                    <img
+                      src={speaker.headshot}
+                      alt={speaker.name}
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div class="text-center p-6">
+                      <div class="w-20 h-20 mx-auto mb-3 rounded-full bg-primary/10 flex items-center justify-center">
+                        <span class="text-3xl font-bold text-primary">{speaker.name.split(' ').map(n => n[0]).join('')}</span>
+                      </div>
+                      <p class="text-sm text-text-light">Photo coming soon</p>
                     </div>
-                    <p class="text-sm text-text-light">Photo coming soon</p>
-                  </div>
+                  )}
                 </div>
                 {speaker.gallery && (
                   <div class="mt-4 text-center">
