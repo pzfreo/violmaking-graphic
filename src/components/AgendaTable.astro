@@ -3,6 +3,7 @@ interface AgendaItem {
   time: string;
   title: string;
   speaker?: string;
+  speakerSlug?: string;
   description?: string;
   isBreak?: boolean;
   website?: string;
@@ -31,7 +32,13 @@ const { items } = Astro.props;
             {item.speaker ? (
               <div>
                 <p class="font-semibold text-text">
-                  {item.speaker}
+                  {item.speakerSlug ? (
+                    <a href={`/speakers#${item.speakerSlug}`} class="hover:text-primary transition-colors">
+                      {item.speaker}
+                    </a>
+                  ) : (
+                    item.speaker
+                  )}
                   {(item.website || item.website2 || item.instagram) && (
                     <span class="inline-flex items-center gap-2 ml-2">
                       {item.website && (
