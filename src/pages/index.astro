@@ -5,6 +5,41 @@ import AgendaTable from '../components/AgendaTable.astro';
 import InstagramFeed from '../components/InstagramFeed.astro';
 import VideoEmbed from '../components/VideoEmbed.astro';
 
+const eventJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Second Viol Making Symposium",
+  "description": "A gathering of viola da gamba makers, players, and researchers at West Dean College featuring talks, performances, and a workshop tour.",
+  "startDate": "2026-03-27T09:15:00+00:00",
+  "endDate": "2026-03-27T21:30:00+00:00",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+  "location": {
+    "@type": "Place",
+    "name": "West Dean College",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "West Dean Gardens",
+      "addressLocality": "Nr Chichester",
+      "addressRegion": "West Sussex",
+      "postalCode": "PO18 0RX",
+      "addressCountry": "GB"
+    }
+  },
+  "organizer": {
+    "@type": "Organization",
+    "name": "Viol Making Symposium",
+    "url": "https://violmaking.org"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://buytickets.at/violmakingsymposium/1957294",
+    "availability": "https://schema.org/InStock"
+  },
+  "image": "https://violmaking.org/scroll.jpg",
+  "url": "https://violmaking.org"
+};
+
 const agenda = [
   { time: '09:15 - 09:30', title: 'Welcome and introduction', description: 'Old Dairy' },
   { time: '09:30 - 10:45', title: 'The neck joint of Michel Collichon\'s 7-string viols: a new approach, hypothesis and results', speaker: 'Andreas Linos', speakerSlug: 'andreas-linos', description: 'Including a performance' },
@@ -24,6 +59,7 @@ const agenda = [
 <BaseLayout
   title="Viol Making Symposium"
   description="Second Viol Making Symposium at West Dean College, Friday March 27th, 2026"
+  jsonLd={eventJsonLd}
 >
   <Hero
     title="Viol Making Symposium"

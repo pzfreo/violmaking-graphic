@@ -7,15 +7,19 @@ interface Props {
   title: string;
   description?: string;
   ogImage?: string;
+  jsonLd?: object;
 }
 
 const {
   title,
   description = 'Viol Making Symposium - West Dean College',
-  ogImage = '/scroll.jpg'
+  ogImage = '/scroll.jpg',
+  jsonLd,
 } = Astro.props;
 
 const siteTitle = title === 'Viol Making Symposium' ? title : `${title} | Viol Making Symposium`;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImageURL = new URL(ogImage, Astro.site);
 ---
 
 <!doctype html>
@@ -26,11 +30,27 @@ const siteTitle = title === 'Viol Making Symposium' ? title : `${title} | Viol M
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
 
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalURL.href} />
+
     <!-- Open Graph -->
     <meta property="og:title" content={siteTitle} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={ogImage} />
+    <meta property="og:image" content={ogImageURL.href} />
+    <meta property="og:url" content={canonicalURL.href} />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Viol Making Symposium" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={siteTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageURL.href} />
+
+    <!-- JSON-LD Structured Data -->
+    {jsonLd && (
+      <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    )}
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
