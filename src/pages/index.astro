@@ -49,7 +49,10 @@ const agenda = [
   { time: '12:30 - 14:00', title: 'Lunch in the main College', isBreak: true },
   { time: '14:00 - 15:15', title: 'Viola Diablo - the devil at the crossroads of tradition', speaker: 'Johnnie Hill with Charlie Wild', speakerSlug: 'jonathan-hill', description: 'Including a performance', website: 'https://www.jonathanhill-luthier.com/', website2: 'https://charliewild.co.uk/' },
   { time: '15:15 - 15:45', title: 'Tea Break', isBreak: true },
-  { time: '15:45 - 16:45', title: 'Short Talks', description: 'Paul Fremantle: "Overstand - a web tool for arched instrument design and geometry"\nViktor Koós: "The sound of wood – the key element to organic structures"' },
+  { time: '15:45 - 16:45', title: 'Short Talks', shortTalks: [
+    { speaker: 'Paul Fremantle', speakerSlug: 'paul-fremantle', talk: 'Overstand - a web tool for arched instrument design and geometry', website: '' },
+    { speaker: 'Viktor Koós', speakerSlug: 'viktor-koos', talk: 'The sound of wood – the key element to organic structures', website: 'https://viktorkoos.com' },
+  ]},
   { time: '16:45 - 18:00', title: 'Workshop tour' },
   { time: '18:00 - 19:30', title: 'Dinner in the main College', description: 'Please pre-book if you are staying for dinner', isBreak: true },
   { time: '19:45 - 21:30', title: 'Informal concert in the Oak Hall' },
