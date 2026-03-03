@@ -89,11 +89,20 @@ const { items } = Astro.props;
                 )}
               </div>
             ) : (
-              <p class:list={[
-                item.isBreak ? 'text-text-light' : 'font-semibold text-text'
-              ]}>
-                {item.title}
-              </p>
+              <div>
+                <p class:list={[
+                  item.isBreak ? 'text-text-light' : 'font-semibold text-text'
+                ]}>
+                  {item.title}
+                </p>
+                {item.description && (
+                  <ul class="mt-1 space-y-1">
+                    {item.description.split('\n').map((line: string) => (
+                      <li class="text-sm text-text-light italic">{line}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
             )}
           </td>
         </tr>
